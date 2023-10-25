@@ -1,0 +1,45 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header p { 
+    background-color: #fff8b5;
+    border-top: 1px solid rgb(247, 198, 85);
+    color: darkcyan;
+ }
+
+header span {
+    font-weight: bold;
+}
+
+video + p {
+    color: grey;
+}
+
+.featured {
+    color: darkred;
+    text-transform: uppercase;
+}
+
+a {
+    color: darkcyan
+    ;
+}
+a:hover {
+    color: white;
+    background-color: darkcyan;
+}
+
+hr {
+    border-top:1px solid cornflowerblue;
+}
+
+video[poster] {
+    box-shadow:5px 5px 5px gray;
+    border-radius: 10px;
+    
+}
+
+p + a {
+    text-transform: capitalize;
+}
