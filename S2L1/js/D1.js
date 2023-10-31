@@ -89,4 +89,3 @@ let name2_lowercase=name2.toLowerCase();
 console.log(name1_lowercase);
 console.log(name2_lowercase);
 console.log(name1_lowercase == name2_lowercase);
-
