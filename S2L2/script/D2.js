@@ -162,6 +162,18 @@ else{
   console.log("il valore fornito non è un numero")
 } */
 
+/* let input=Number(prompt("inserisci un valore"))
+console.log("valore inserito: " + input)
+
+
+
+if(isNaN(input)) {
+  console.log("il valore inserito non è un numero")
+}
+else{
+  console.log("il valore inserito è un numero")
+} */
+
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
