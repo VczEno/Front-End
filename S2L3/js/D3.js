@@ -232,7 +232,7 @@ for(i=0;i<characters.length; i++) {
        }
   }
 }
-console.log(characters.length)
+console.log(characters.length);
 
 
 /* --EXTRA-- ESERCIZIO 10
