@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poiret+One&display=swap');
+
+html{
+    background-color: #D9C49C;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family: 'Poiret One', sans-serif;
+    font-weight: bold;
+}
+/*header*/
+
+header{
+    padding: 3rem;
+    background-color: #202617;
+    color: #D9C49C;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+   
+
+}
+
+header h1 {
+    font-size: 5rem;
+    margin: 2rem;
+    font-family: 'Abril Fatface', serif;
+}
+
+
+/*body*/
+
+main {
+    padding: 2rem;
+    
+}
+
+/*section #taskInp*/
+
+#TaskInp {
+    padding: 3rem auto;
+    text-align: center;
+}
+
+input {
+    
+    border: 2px solid #202617 ;
+    border-radius: 5px;
+    width: 30rem;
+    background-color: #e3dfd7;
+    font-family: 'Poiret One', sans-serif;
+    font-weight: bold;
+    height: 2rem;
+    font-size: 1.3rem;
+    text-align: center;
+
+    
+}
+
+#TaskInp button, .delBut {
+    background-color: #334026;
+    color: #D9C49C;
+    border: none;
+    border-radius: 5px;
+    margin: 1rem;
+    width:8rem;
+    height: 2rem;
+}
+
+#TaskList {
+    padding: 3rem
+}
+
+#TaskList h2 {
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Abril Fatface', serif;
+    color: #334026;
+
+
+}
+
+.taskText {
+    font-size: 2rem;
+    text-transform:
+} 
+
+.taskText::before {
+    content: "ᐅ  ";
+
+}
+
+.delBut {
+    margin: 2rem;
+
+}
+
+.delBut:hover {
+    border: 2px solid orangered
+}

@@ -86,8 +86,8 @@ Scrivi una funzione che renda verde il background di ogni lista non ordinata
 const paintItGreen = function (NewCol) {
     let ulAll=document.querySelectorAll('ul')
     /* console.log(ulAll)
-    let ulAll2=document.getElementsByTagName('ul') // con questo non funziona anche se genera lo stesso array
     console.log(ulAll2) */
+    let ulAll2=document.getElementsByTagName('ul') //  l'HTMLcollection non mi funziona nel .foreach, perchè boh 
     ulAll.forEach (n => n.style.backgroundColor= NewCol)
     
 }
@@ -98,12 +98,13 @@ paintItGreen('green')
 Scrivi una funzione che rimuova l'ultima lettera dall'h1 ogni volta che l'utente lo clicca
 */
 
-/* const makeItClickable = function () {
-    let h1arr= document.getElementById('titolo')
-    console.log(h1arr)
-    h1arr.innerText.slice(-1)
-    
-} */
+ const makeItClickable = function () {
+    let h1arr= document.getElementById('titolo') //assegno variabile h1arr al nodo h1 con id titolo
+    let slc = h1arr.innerText //associo il contenuto del nodo h1 a variabile slc
+    slc = slc.slice(0,-1) //con il metodo slice rimuovo l'ultima lettera( il secondo parametro -1 fa si che si parta da destra, essendo il primo parametro 0 si parte dalla fine)
+    h1arr.innerText = slc // sostituisco il testo del nodo h1 con il risultato dello slice
+     // questa operazione si ripete ogni volta che clicco sul nodo h1
+} 
 
 /* ESERCIZIO 10
 Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
@@ -126,21 +127,42 @@ const generateTable = function () {
     divTable.appendChild(newTable)
     let t1row=document.createElement('tr')
     newTable.appendChild(t1row)
-    let tableHeading = document.createElement('th')
-    for(let i=0; i<5; i++) {
-         t1row.appendChild(tableHeading)
+    let i=0;
+    while(i<arguments.length) {
+        let tableHeading = document.createElement('th')
+        t1row.appendChild(tableHeading)
+        tableHeading.innerText = arguments[i]
+        i++;
     }
     
-    
 }
-generateTable()
+generateTable('immagine','nome', 'prodotto' ,'prezzo', 'quantità')
 
 /* ESERCIZIO 12
 Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
 */
 
-const addRow = function () {}
-
+const addRow = function () {
+    let tabella=document.querySelector('table')
+    let t2row=document.createElement('tr')
+    tabella.appendChild(t2row)
+    let i=0;
+     while(i<arguments.length) {
+        /* if(i=0) {
+            let td1=document.querySelector('table:lastChild')
+            let image=document.createElement('img')
+            td1.appendChild(image)
+            
+        } */ 
+        let tableData = document.createElement('td')
+        t2row.appendChild(tableData)
+        tableData.innerText = arguments[i]
+        i++;
+        }
+       
+     } 
+    
+addRow('1','2','3','4','5')
 /* ESERCIZIO 14
 Crea una funzione che nasconda le immagini della tabella quando eseguita
 */
@@ -151,12 +173,17 @@ const hideAllImages = function () {}
 Crea una funzione che cambi il colore del h2 con id "changeMyColor" con un colore random ad ogni click ricevuto
 */
 
-const changeColorWithRandom = function (newcolor) {
+const changeColorWithRandom = function () {
     let h2Col = document.querySelector('#changeMyColor')
-    h2Col.style.color= newcolor
+    let r = Math.round(Math.random()*255)
+    let g = Math.round(Math.random()*255)
+    let b = Math.round(Math.random()*255)
+    let rancol = 'rgb('+r+' ,'+g+' ,'+b+')'
+    console.log(rancol)
+    h2Col.style.color='rancol'
 } //manca la parte del cambio colore al click
 
-changeColorWithRandom('yellow')
+
 
 /* EXTRA ESERCIZIO 16
 Crea una funzione che elimini le vocali da ogni elemento testuale della pagina (puoi aiutarti con i nuovi metodi degli array di ES6)
