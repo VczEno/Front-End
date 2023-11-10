@@ -178,9 +178,7 @@ const changeColorWithRandom = function () {
     let r = Math.round(Math.random()*255)
     let g = Math.round(Math.random()*255)
     let b = Math.round(Math.random()*255)
-    let rancol = 'rgb('+r+' ,'+g+' ,'+b+')'
-    console.log(rancol)
-    h2Col.style.color='rancol'
+    h2Col.style.color='rgb('+r+','+g+','+b+')'
 } //manca la parte del cambio colore al click
 
 

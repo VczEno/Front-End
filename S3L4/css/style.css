@@ -1,0 +1,56 @@
+*{
+   background-color: rgb(107, 0, 0);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 1em;
+    text-align: center;
+}
+
+body {
+    padding: 2em;
+}
+
+h1 {
+    color: goldenrod;
+    font-size: 5em;
+}
+
+h2 {
+    color: goldenrod;
+    font-size: 1.5em;
+}
+
+header {
+    margin: 2em;
+}
+
+#selezione {
+    padding: 1em;
+}
+
+button {
+    color: rgb(107, 0, 0);
+    background-color: goldenrod;
+    padding: 0.5em;
+    font-size: 1em;
+}
+
+
+.tabcell {
+    display: inline-block;
+    border: 1px dashed goldenrod;
+    margin: 0.5em;
+    padding: 0.5em;
+    width: 5%;
+} 
+
+.tabcell p {
+    color: goldenrod;
+    font-size: 1.5em;
+}
+
+.selected {
+    background-color: rgb(170, 50, 50);
+}

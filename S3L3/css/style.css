@@ -87,7 +87,7 @@ input {
 } 
 
 .taskText::before {
-    content: "ᐅ  ";
+    content: "\21D2";
 
 }
 
