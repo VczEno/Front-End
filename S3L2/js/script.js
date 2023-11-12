@@ -136,33 +136,38 @@ const generateTable = function () {
     }
     
 }
-generateTable('immagine','nome', 'prodotto' ,'prezzo', 'quantità')
+generateTable('immagine','nome prodotto' ,'prezzo', 'quantità')
 
 /* ESERCIZIO 12
 Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
 */
 
-const addRow = function () {
+const addRow = function (...data) {
     let tabella=document.querySelector('table')
     let t2row=document.createElement('tr')
     tabella.appendChild(t2row)
-    let i=0;
-     while(i<arguments.length) {
-        /* if(i=0) {
-            let td1=document.querySelector('table:lastChild')
-            let image=document.createElement('img')
-            td1.appendChild(image)
-            
-        } */ 
+    let tableData = document.createElement('td')
+        t2row.appendChild(tableData)
+        let img = document.createElement('img')
+        tableData.appendChild(img)
+        img.setAttribute('src', data[0])
+        img.setAttribute('width', '100px')
+
+    let i=1;
+     while(i<data.length) {
+      
         let tableData = document.createElement('td')
         t2row.appendChild(tableData)
-        tableData.innerText = arguments[i]
+        tableData.innerText = data[i]
         i++;
         }
        
      } 
     
-addRow('1','2','3','4','5')
+addRow('img/vbass.jpg','Korg Volca Bass','120','2')
+addRow('img/vkeys.jpg','Korg Volca Keys','150','1')
+addRow('img/vsample.jpg','Korg Volca Sample','130','1')
+
 /* ESERCIZIO 14
 Crea una funzione che nasconda le immagini della tabella quando eseguita
 */
@@ -187,4 +192,15 @@ const changeColorWithRandom = function () {
 Crea una funzione che elimini le vocali da ogni elemento testuale della pagina (puoi aiutarti con i nuovi metodi degli array di ES6)
 */
 
-const deleteVowels = function () {}
+const deleteVowels = function () {
+    let testo = document.querySelectorAll('h1, h2,p,li,a, h3') // seleziono tutti i tag di testo
+   console.log(testo)
+    testo.forEach(node => { // li ciclo con un for each e li chiamo node
+        console.log(node.innerText) //stampo il testo interno di ogni elemento per controllo
+        let arrNode = [node.innerText]
+        let arrNodeFilt =arrNode.filter(char => char !='a')
+        console.log(arrNodeFilt)
+        
+    });
+}
+deleteVowels()

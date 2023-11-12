@@ -54,3 +54,22 @@ button {
 .selected {
     background-color: rgb(170, 50, 50);
 }
+
+.cartella {
+    display: inline-block;
+    width: 25rem;
+    margin: 3em 1em;
+}
+
+.cartcell {
+    display: inline-block;
+    border: 1px dashed goldenrod;
+    margin: 0.5em;
+    padding: 0.5em;
+    width: 5%;
+} 
+
+.cartcell p {
+    color: goldenrod;
+    font-size: 1.3em;
+}
