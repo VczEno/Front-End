@@ -51,8 +51,8 @@ button {
     font-size: 1.5em;
 }
 
-.selected {
-    background-color: rgb(170, 50, 50);
+.selected, .selected p {
+    background-color: rgb(255, 255, 255);
 }
 
 .cartella {

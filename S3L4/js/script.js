@@ -26,8 +26,9 @@ function TabGenerator() {
 }
 
 
-function randomN() {
+/* function randomNv1() {
     let arrN=[];
+
     let numeroestratto = document.createElement('span')
     let extN = document.createElement('span')
     numeroestratto.innerHTML= 'Numero estratto: '
@@ -45,7 +46,6 @@ function randomN() {
             if(!arrN.includes(ranN)){
                 arrN.push(ranN)
                 extN.innerText = ranN
-                /* selectN (ranN) */
                 } else {
                     return randomN()
 
@@ -58,14 +58,80 @@ function randomN() {
         
 
     });
+} */
+
+function randomN() {
+    let arrN=[];
+    for(j=0;j<76;j++) {
+        arrN[j]=j+1
+    } 
+    let i=0;
+    let numeroestratto = document.createElement('span')
+    let extN = document.createElement('span')
+    numeroestratto.innerHTML= 'Numero estratto: '
+    let btnN= document.querySelector('#selezione button')
+    
+    let selezione =btnN.parentNode
+    selezione.appendChild(numeroestratto)
+    selezione.appendChild(extN)
+   
+    btnN.addEventListener ('click', () => { 
+        let tabCells=document.querySelectorAll('#tabellone div') 
+        let cartCells=document.querySelectorAll('.cartcell')
+        let randInd= Math.ceil(Math.random()*75-i);
+        let randN= arrN.splice(randInd, 1)
+        i++;
+        extN.innerText=randN[0]
+        console.log(randN[0])
+        console.log(randN)
+        console.log(i)
+        console.log(tabCells.length)
+        for(let y=0; y<tabCells.length; y++) {
+            
+            if(tabCells[y].innerText == randN[0] ) {
+                console.log('dentro')
+                console.log(tabCells[y])
+                tabCells[y].classList.add('selected')
+            } 
+
+        }
+            if (i==75) {
+            alert('sono usciti tutti i numeri')
+            }
+        cartCells.forEach(ele => {
+            if(ele.innerText == randN[0] ) {
+                console.log('dentro')
+                console.log(ele)
+                ele.classList.add('selected')
+            } 
+        })
+    })
 }
+
+            /* console.log(arrCart.length) */
+       /* if(arrN.length<76){
+            if(!arrN.includes(ranN)){
+                arrN.push(ranN)
+                extN.innerText = ranN
+                
+                } else {
+                    return randomN()
+
+
+            }
+        } else {
+                alert('gioco finito')
+        }
+        */
+        
+
 
 function CartGenerator() {
     let numCart= Number(prompt('seleziona il numero di cartelle con cui vuoi giocare'))
     let areaCart=document.querySelector('#areacartelle')
     
     for(let i=0; i<numCart; i++) {
-        
+
         let arrCart = []
         for(j=0;j<76;j++) {
             arrCart[j]=j+1
@@ -81,7 +147,7 @@ function CartGenerator() {
             cartella.appendChild(cartCell);
             let randInd= Math.ceil(Math.random()*75-k);
             cartN.innerText = arrCart.splice(randInd, 1)
-            console.log(arrCart.length)
+            /* console.log(arrCart.length) */
         }
         areaCart.appendChild(cartella)
         cartella.classList.add('cartella')
