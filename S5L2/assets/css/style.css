@@ -101,12 +101,11 @@ main {
   }
 }
 h1 span {
-  display: inline-block;
+  position:relative;
 }
 main h1 span img {
-  position:relative;
+  position:absolute;
   top:-10px;
-  left: 50px;
   opacity: 0.5;
 }
 
