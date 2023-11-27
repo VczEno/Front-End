@@ -28,6 +28,7 @@ main{
     transition-property: transform;
     transition-duration: 1000ms;
     transition-timing-function: ease-in-out;
+    animation: appear 0.2s linear 0s 1 normal both ;
 
     
 }
@@ -76,3 +77,6 @@ main div:nth-child(6) {
 main div:hover {
     transform: scale(1.2)
 }
+
+
+

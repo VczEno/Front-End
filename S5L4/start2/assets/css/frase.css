@@ -1,0 +1,89 @@
+/*
+1 creazione del testo e formattazione di 1 parola da far ruotare
+2 inserimento delle altre 2 parole
+3 sovrapporre le 3 parole
+4 mostrare 1 parola e nascondere le altre 2
+5 animare 1 parola (fadein - fadeout con spostamento)
+6 animare le altre 2 parole
+7 ritardare progressivamente l'animazione delle altre 2 parole 
+*/
+html {
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#testoAlternato {
+    margin: 10%;
+    border: 2px solid black;
+    padding: 5em 3em;
+    font-size:2em;
+}
+
+.parole {
+   display:flex; 
+   margin-left:1ch;
+   
+   flex-direction: column;
+}
+
+.parole i:nth-child(1) {
+    color:darkblue;
+    animation: slideshow1 9s ease infinite normal both;
+
+
+      
+}
+
+.parole i:nth-child(2) {
+    color:teal;
+    position:relative;
+    top:-1em;
+    animation: slideshow1 9s ease 3s infinite normal both;
+
+}
+
+.parole i:nth-child(3) {
+    color: slateblue;
+    position:relative;
+    top:-2em;
+    animation: slideshow1 9s ease 6s infinite normal both;
+
+}
+
+.last-line {
+    display:flex;
+}
+
+
+/* .parole:nth-child(1) {
+    animation: slideshow1 3s ease-in-out infinite normal both;
+} 
+
+.parole:nth-child(2) {
+    animation: slideshow2 5s ease-in-out 2s infinite normal both;
+} 
+
+.parole:nth-child(3) {
+    animation: slideshow3 3s ease-in-out  3s infinite normal both;
+} 
+/*  */
+ @keyframes slideshow1 {
+    from {transform: translateY(-0.5em); opacity:0;}
+    20% {transform: translateY(0em); opacity:1}
+    40%{ transform: translateY(0.5em); opacity:0;}
+    /* 60%{ opacity:0;} */
+    to { opacity:0;}
+} 
+
+/* @keyframes slideshow2 {
+    from {opacity: 0;}
+    50% {transform: translateY(0em); opacity:1}
+    to { transform: translateY(0.5em); opacity:0;}
+} 
+
+@keyframes slideshow3 {
+    from {opacity: 0;}
+    50% {transform: translateY(0em); opacity:1}
+    to { transform: translateY(0.5em); opacity:0;}
+}  */
