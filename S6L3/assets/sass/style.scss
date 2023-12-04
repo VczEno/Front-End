@@ -1,0 +1,26 @@
+@import'reset';
+@import'colori';
+@import'font';
+@import'spaziature';
+@import'bottoni';
+@import'mixins-generici';
+@import'animazioni';
+
+.line-4 img {
+    @include floating(grid)
+}
+
+.line-4 {
+    @include grid(4)
+}
+
+.showcase-content {
+    @include floating(hero);
+    height: 100px;
+    width: 100px;
+}
+
+.logo {
+    color: red;
+    @include fadeIn (1s, -10px, 0, 0.5s, logo )
+}

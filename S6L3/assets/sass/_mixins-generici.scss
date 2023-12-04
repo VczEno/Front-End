@@ -1,0 +1,20 @@
+/* MIXIN GENERICI */
+//per immagine principale nella hero e nella griglia
+@use 'sass:math';
+
+@mixin floating ($pos) {
+    border-radius:20px;
+    @if $pos == 'hero' {
+        box-shadow: 10px 10px 10px black;
+        border: 2px solid purple    
+    } @else {
+        box-shadow: 5px 5px 5px black;
+    }
+
+}
+
+@mixin grid ($num) {
+    display:grid;
+    grid-template-columns: repeat(#{$num},math.div(100%, $num));
+
+}

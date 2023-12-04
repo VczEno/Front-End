@@ -1,0 +1,36 @@
+/* SPACING */
+
+// mappa con le diciture e e dimensioni
+$dimension: ("sm":0.5em, "normal":1em , "md":1.5em, "lg":2em, "xl":3em, "xxl":5em);
+
+/* $display: $block, $inline;
+$prop: $padding, $block; */
+
+
+ @each $dim, $val in $dimension {
+   .padding-block-#{$dim} {
+       display: block;
+       padding: #{$val}
+   }
+} 
+
+@each $dim, $val in $dimension {
+    .padding-inline-#{$dim} {
+        display: block;
+        padding: #{$val}
+    }
+ } 
+
+ @each $dim, $val in $dimension {
+    .margin-block-#{$dim} {
+        display: block;
+        padding: #{$val}
+    }
+ } 
+
+ @each $dim, $val in $dimension {
+    .margin-block-#{$dim} {
+        display: block;
+        padding: #{$val}
+    }
+ } 

@@ -1,0 +1,22 @@
+@import "../../../bootstrap-5.3.2/scss/functions";
+
+$primary: purple;
+
+@import "../../../bootstrap-5.3.2/scss/variables";
+
+$cs-spacer: (
+    6: $spacer * 5,
+    7: $spacer * 7
+);
+
+$spacers: map-merge($spacers, $cs-spacer);
+
+
+
+
+
+
+
+
+
+@import "../../../bootstrap-5.3.2/scss/bootstrap.scss"

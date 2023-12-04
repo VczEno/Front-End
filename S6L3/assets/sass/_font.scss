@@ -1,0 +1,25 @@
+/* FONT */
+
+$fontFamily: 'Arial, Sans-Serif';
+
+.text-big { 
+    font-family: $fontFamily;
+    font-size: 5em;
+}
+
+.text-mid { 
+    font-family: $fontFamily;
+    font-size: 3em;
+}
+
+.text-big { 
+    font-family: $fontFamily;
+    font-size: 1em;
+}
+
+
+@mixin title-big {
+    font-weight: bold;
+    color: darken($bg_hero, 50%) ;
+}
+

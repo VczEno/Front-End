@@ -1,0 +1,7 @@
+// questo commento non comparirà nel CSS
+/* BOTTONI*/
+@each $col, $val in $bottoni {
+    .btn-#{$col} {
+        background-color: $val
+    }
+}

@@ -1,0 +1,19 @@
+@mixin fadeIn ($time, $startingP, $endingP, $delay, $nome) {
+   animation: $time ease-in $delay 1 normal both $nome;
+ 
+   
+   @keyframes #{$nome} {
+    from {
+        opacity: 0;
+        transform: translateY($startingP);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY($endingP);
+    }
+
+}
+
+}
+
