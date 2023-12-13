@@ -1,14 +1,13 @@
 
 
 function timer() {
-    let sessTime= sessionStorage.getItem("tempo di sessione")
-    console.log(sessTime)
+    let sessionTime= sessionStorage.getItem("tempo di sessione")
+    console.log("valore al refresh: " + sessionTime)
     setInterval( () => { 
-        console.log("prima" + sessTime)
-        sessTime++;
-        console.log("dopo" + sessTime)
-        sessionStorage.setItem("tempo di sessione", sessTime)
-        },5000)
+        console.log("pre incremento: " + sessionTime)
+        sessionTime++;
+        console.log("post incremento: " + sessionTime)
+        sessionStorage.setItem("tempo di sessione", sessionTime)
+        },3000)
 }
-
 timer()

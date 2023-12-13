@@ -37,7 +37,7 @@ function saveName () {
 function deleteName () {
     deleteBtn.addEventListener ("click", () => {
         savedName.innerText=""
-        timer()
+        localStorage.removeItem("nome")
     })
 }
 saveName()
