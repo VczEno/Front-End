@@ -1,0 +1,12 @@
+.albumCover {
+    background-image: url(https://api.deezer.com/artist/412/image);
+    width: 200px;
+    height: 200px;
+}
+
+.metadata {
+
+    height: 500px;
+    width: 100%;
+    
+}

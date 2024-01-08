@@ -1,0 +1,149 @@
+{
+  "users": [
+    {
+      "email": "billy@ballo.it",
+      "password": "$2a$10$tfjsHh/xLPNBr7UNVw..e.Y8igvih0eleQF9gr7pri.9hw7d885cu",
+      "firstname": "Billy",
+      "lastname": "Ballo",
+      "city": "Potenza",
+      "id": 1
+    }
+  ],
+  "products": [
+    {
+      "prodBrand": "asdasd",
+      "prodModel": "asdas",
+      "prodCat": "dasd",
+      "prodPrice": "1",
+      "prodQuant": "1",
+      "prodImg": "sads",
+      "id": 1
+    },
+    {
+      "prodBrand": "asdasd",
+      "prodModel": "asdasd",
+      "prodCat": "asdasd",
+      "prodPrice": "1",
+      "prodQuant": "1",
+      "prodImg": "asdasd",
+      "id": 2
+    },
+    {
+      "prodBrand": "dd",
+      "prodModel": "dd",
+      "prodCat": "dd",
+      "prodPrice": "11",
+      "prodQuant": "1",
+      "prodImg": "dd",
+      "id": 3
+    },
+    {
+      "prodBrand": "wew",
+      "prodModel": "wewe",
+      "prodCat": "wewe",
+      "prodPrice": "2",
+      "prodQuant": "2",
+      "prodImg": "ds",
+      "id": 4
+    },
+    {
+      "prodBrand": "asasas",
+      "prodModel": "asas",
+      "prodCat": "asasas",
+      "prodPrice": "1",
+      "prodQuant": "1",
+      "prodImg": "asasas",
+      "id": 5
+    },
+    {
+      "prodBrand": "sasas",
+      "prodModel": "asas",
+      "prodCat": "1",
+      "prodPrice": "1",
+      "prodQuant": "1",
+      "prodImg": "sdsd",
+      "id": 6
+    },
+    {
+      "prodBrand": "dfd",
+      "prodModel": "df",
+      "prodCat": "df",
+      "prodPrice": "1",
+      "prodQuant": "1",
+      "prodImg": "sd",
+      "id": 7
+    },
+    {
+      "prodBrand": "as",
+      "prodModel": "as",
+      "prodCat": "as",
+      "prodPrice": "1",
+      "prodQuant": "1",
+      "prodImg": "asa",
+      "id": 8
+    },
+    {
+      "prodBrand": "",
+      "prodModel": "",
+      "prodCat": "",
+      "prodPrice": "",
+      "prodQuant": "",
+      "prodImg": "",
+      "id": 9
+    },
+    {
+      "prodBrand": "",
+      "prodModel": "",
+      "prodCat": "",
+      "prodPrice": "",
+      "prodQuant": "",
+      "prodImg": "",
+      "id": 10
+    },
+    {
+      "prodBrand": "",
+      "prodModel": "",
+      "prodCat": "",
+      "prodPrice": "",
+      "prodQuant": "",
+      "prodImg": "",
+      "id": 11
+    },
+    {
+      "prodBrand": "",
+      "prodModel": "",
+      "prodCat": "",
+      "prodPrice": "",
+      "prodQuant": "",
+      "prodImg": "",
+      "id": 12
+    },
+    {
+      "prodBrand": "",
+      "prodModel": "",
+      "prodCat": "",
+      "prodPrice": "",
+      "prodQuant": "",
+      "prodImg": "",
+      "id": 13
+    },
+    {
+      "prodBrand": "",
+      "prodModel": "",
+      "prodCat": "",
+      "prodPrice": "",
+      "prodQuant": "",
+      "prodImg": "",
+      "id": 14
+    },
+    {
+      "prodBrand": "sadansfasf",
+      "prodModel": "asdasdasf",
+      "prodCat": "asfasda",
+      "prodPrice": "1",
+      "prodQuant": "2",
+      "prodImg": "sasa",
+      "id": 15
+    }
+  ]
+}

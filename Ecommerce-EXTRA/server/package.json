@@ -1,0 +1,16 @@
+{
+  "name": "ecommerce-extra",
+  "version": "1.0.0",
+  "description": "Esercizio EXTRA ecommerce",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Vincenzo Arpaia",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^0.17.4",
+    "json-server-auth": "^2.1.0"
+  }
+}

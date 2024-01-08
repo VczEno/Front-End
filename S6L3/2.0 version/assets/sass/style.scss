@@ -1,0 +1,28 @@
+@import "reset";
+@import "font";
+@import "animazioni";
+@import "colori";
+@import "bottoni";
+@import "mixins-generici";
+@import "spaziature";
+
+
+body div h1 {
+    @include title-big
+}
+
+.showcase-content img {
+    @include floating(5px 5px 20px black, 2px solid white )
+}
+
+.line-4 img {
+    @include floating(5px 5px 20px rgb(148, 0, 0), none )
+}
+
+.line-4 {
+    @include grid(4)
+}
+
+
+
+

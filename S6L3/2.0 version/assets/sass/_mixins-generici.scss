@@ -1,0 +1,21 @@
+@mixin floating($boxShadow, $border) {
+    border-radius: 5%;
+    box-shadow: $boxShadow;
+    border: $border;
+}
+
+@function gridN($n) {
+     @for $n from 1 to $n {
+        grid-template-columns: (grid-template-columns + "auto");
+     }
+    
+    @return auto
+}
+
+@mixin grid($n) {
+    display: grid;
+    width: 100%;
+    grid-template-columns: gridN($n);
+    
+}
+

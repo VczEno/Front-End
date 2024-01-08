@@ -1,0 +1,13 @@
+html {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+$text-md: 2rem;
+$text-lg: 4rem;
+
+@mixin title-big {
+    font-size: 5rem;
+    font-weight: bold;
+    color: darken($bg_hero, 25%)
+}

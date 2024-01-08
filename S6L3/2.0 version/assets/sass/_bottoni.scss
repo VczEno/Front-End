@@ -1,0 +1,7 @@
+@each $col, $val in $bottoni {
+    .btn-#{$col} {
+        background-color: #{$val};
+        color: white;
+        border-radius: 5%;
+    }
+}

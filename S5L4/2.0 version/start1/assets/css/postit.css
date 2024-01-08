@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shadows+Into+Light&display=swap');
+
+html {
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-family: 'Shadows Into Light', cursive;
+
+}
+
+body {
+    background-image: url(../imgs/bg-fridge.jpg);
+    background-size: cover;
+    
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem;
+    justify-content: space-evenly;
+}
+
+.postit {
+    font-size: 2rem;
+    background-color: aqua;
+    width: 250px;
+    height: 250px;
+    margin: 2rem;
+    box-shadow: 5px 5px 5px #999;
+    transition: all 2s;
+    animation: rot 3s ease-in-out 2s 1 normal both;
+    
+}
+
+.postit:nth-child(3n-2) {
+    background-color: limegreen;
+}
+
+.postit:nth-child(3n) {
+    background-color: beige;
+}
+
+/* .postit:nth-child(3n-2) {
+    transform: rotate(-5deg);
+}
+
+.postit:nth-child(3n-1) {
+    transform: rotate(+10deg);
+    animation: load 2s ease-out 1s 1 normal backwards;
+}
+
+.postit:nth-child(3n) {
+    transform: rotate(+3deg);
+    animation: load 2s ease-out 2s 1 normal backwards;
+} */
+
+
+
+.postit:nth-child(1) {
+    background-image: url(../imgs/athens.png);
+    background-size: cover;
+    transform: rotate(+15deg);
+    animation: load 2s cubic-bezier(0,1.02,1,.59) 0s 1 normal backwards;
+} 
+.postit:nth-child(2) {
+    background-image: url(../imgs/barcelona.png);
+    background-size: cover;
+    transform: rotate(-6deg);
+    animation: load 2s cubic-bezier(0,1.02,1,.59) 1.25s 1 normal backwards;
+}
+.postit:nth-child(3) {
+    background-image: url(../imgs/london.png);
+    background-size: cover;
+    transform: rotate(+2deg);
+    animation: load 2s cubic-bezier(0,1.02,1,.59) 0.75s 1 normal backwards;
+}
+.postit:nth-child(4) {
+    background-image: url(../imgs/new\ york.png);
+    background-size: cover;
+    transform: rotate(+8deg);
+    animation: load 2s cubic-bezier(0,1.02,1,.59) 1.75s 1 normal backwards;
+}
+.postit:nth-child(5) {
+    background-image: url(../imgs/paris.png);
+    background-size: cover;
+    transform: rotate(-10deg);
+    animation: load 2s cubic-bezier(0,1.02,1,.59) 1.50s 1 normal backwards;
+}
+.postit:nth-child(6) {
+    background-image: url(../imgs/rio.png);
+    background-size: cover;
+    transform: rotate(-4deg);
+    animation: load 2s cubic-bezier(0,1.02,1,.59) 0.25s 1 normal backwards;
+}
+.postit:nth-child(7) {
+    background-image: url(../imgs/rome.png);
+    background-size: cover;
+    transform: rotate(+5deg);
+    animation: load 2s cubic-bezier(0,1.02,1,.59) 1s 1 normal backwards;
+}
+.postit:nth-child(8) {
+    background-image: url(../imgs/tokyo.png);
+    background-size: cover;
+    transform: rotate(-3deg);
+    animation: load 2s cubic-bezier(0,1.02,1,.59) 0.50s 1 normal backwards;
+}
+
+
+
+
+.postit:hover {
+    transform: scale(1.2);
+    box-shadow: 10px 10px 20px 5px #999;
+}
+
+@keyframes load {
+   0% {transform: perspective(500px) translate3d(-500px, +500px, +1000px);}
+    100%  {transform:perspective(500px);}
+
+} 
+    
+@keyframes rot {
+    from {transform: rotate(10deg);}
+    to{transform: rotate(50deg);}
+}
+
